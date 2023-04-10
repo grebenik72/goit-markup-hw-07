@@ -12,11 +12,12 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>   
-        <header class="header-page">
+        <!-- <header class="header-page">
             <div class="container header-container">
                 <nav class="page-nav">
                     <a class="logo link" href="">Web<span class="header-logo">Studio</span></a>
@@ -37,7 +38,7 @@
                     </ul>
                 </address>
             </div>
-        </header>
+        </header> -->
         <main>
             <!-- hero -->
             <section class="hero-section">
@@ -55,7 +56,7 @@
                     <ul class="list feature-page">
                         <li class="feature-page-item">
                             <div class="feature-icon">
-                            <svg width="64" height="64">
+                            <svg width="64" height="64" class="icon-none">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
                             </div>
@@ -65,7 +66,7 @@
                         </li>
                         <li class="feature-page-item">
                             <div class="feature-icon">
-                            <svg width="64" height="64">
+                            <svg width="64" height="64" class="icon-none">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                             </div>
@@ -76,7 +77,7 @@
                         </li>
                         <li class="feature-page-item">
                             <div class="feature-icon">
-                            <svg width="64" height="64">
+                            <svg width="64" height="64" class="icon-none">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
                             </div>
@@ -87,7 +88,7 @@
                         </li>
                         <li class="feature-page-item">
                             <div class="feature-icon">
-                            <svg width="64" height="64">
+                            <svg width="64" height="64" class="icon-none">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
                             </div>
@@ -122,7 +123,9 @@
                     <h2 class="team-title">Our Team</h2>
                     <ul class="list team-page">
                         <li class="team-page-item">
-                            <img src="./images/team-card1.jpg" alt="team-card1" width="264" height="260" />
+                            <img 
+                            srcset="./images/team-card1-1x.jpg 1x, ./images/team-card1-2x.jpg 2x"
+                            src="./images/team-card1-1x.jpg" alt="team-card1" width="264" height="260" />
                             <div class="card-border">
                                 <h3 class="card-title">Mark Guerrero</h3>
                                 <p class="team-text">Product Designer</p>
@@ -159,7 +162,9 @@
                             </div>
                         </li>
                         <li class="team-page-item">
-                            <img src="./images/team-card2.jpg" alt="team-card2" width="264" height="260" />
+                            <img
+                            srcset="./images/team-card2-1x.jpg 1x, ./images/team-card2-2x.jpg 2x"
+                            src="./images/team-card2-1x.jpg" alt="team-card2" width="264" height="260" />
                             <div class="card-border">
                                 <h3 class="card-title">Tom Ford</h3>
                                 <p class="team-text">Frontend Developer</p>
@@ -196,7 +201,9 @@
                             </div>
                         </li>
                         <li class="team-page-item">
-                            <img src="./images/team-card3.jpg" alt="team-card3" width="264" height="260" />
+                            <img
+                            srcset="./images/team-card3-1x.jpg 1x, ./images/team-card3-2x.jpg 2x"
+                            src="./images/team-card3-1x.jpg" alt="team-card3" width="264" height="260" />
                             <div class="card-border">
                                 <h3 class="card-title">Camila Garcia</h3>
                                 <p class="team-text">Marketing</p>
@@ -233,7 +240,9 @@
                             </div>
                         </li>
                         <li class="team-page-item">
-                            <img src="./images/team-card4.jpg" alt="team-card4" width="264" height="260" />
+                            <img 
+                            srcset="./images/team-card4-1x.jpg 1x, ./images/team-card4-2x.jpg 2x"
+                            src="./images/team-card4-1x.jpg" alt="team-card4" width="264" height="260" />
                             <div class="card-border">
                                 <h3 class="card-title">Daniel Wilson</h3>
                                 <p class="team-text">UI Designer</p>
@@ -274,7 +283,7 @@
             </section>
             <!-- section4 -->
             <section class="customers-section">
-                <div class="container">
+                <div class="container special">
                     <h2 class="customers-title">Customers</h2>
                 <ul class="customer list">
                     <li class="customer-item">
