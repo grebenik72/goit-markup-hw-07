@@ -72,8 +72,41 @@ img {
 .menu-nav:last-child {
     margin-right: 0;
 }
-.mobile-menu-open-icon{
+.mobil-menu-container {
+    display: flex;
+    height: 796px;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 35px 40px 40px;
+}
+.mobile-menu-open-icon {
     stroke: var(--secondary-color);
+}
+.mobile-menu-open {
+    height: 32px;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+.mobil-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: var(--main-titel-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.menu-mobil {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -622,6 +655,7 @@ transition: opacity var(--transition), visibility var(--transition);
     transform: translate(-50%, -50%) scaleY(0);
 
 }
+.mobil-close,
 .modal-close {
     display: flex;
     position: absolute;
@@ -637,6 +671,7 @@ transition: opacity var(--transition), visibility var(--transition);
     transition: fill var(--transition), background-color var(--transition), border var(--transition);
 
 }
+/* .mobil-close, */
 .modal-close:is(:hover, :focus) {
     fill: var(--main-titel-color);
     background-color: var(--accent-color);
@@ -945,5 +980,21 @@ screen and (min-resolution: 2dppx) {
     .menu-item {
         display: none;
     }
-
+    .menu-link.current::after {
+        display: none;
+    }
+    .menu-link {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+    }
+    .contacts {
+        margin-left: 0;
+    }
+    .contacts-menu {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--logo-color)
+    }
 }
