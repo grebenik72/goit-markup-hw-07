@@ -776,7 +776,7 @@ transition: opacity var(--transition), visibility var(--transition);
     }
         .modal {
             width: 392px;
-            height: 586;
+            height: 586px;
         }
 }
 
