@@ -944,6 +944,10 @@ screen and (min-resolution: 2dppx) {
                 rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
     }
 }
+.section-rectangle {
+    padding-bottom: 120px;
+}
+    
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
