@@ -35,7 +35,6 @@ img {
     display: block;
 }
 .container {
-    /* width: 100%; */
     padding-left: 15px;
     padding-right: 15px;
     /* outline: solid red; */
@@ -608,7 +607,8 @@ transition: opacity var(--transition), visibility var(--transition);
     left: 50%;
     transform: translate(-50%, -50%) scaleY(1);
     transition: transform var(--transition);
-    max-width: 392px;
+    width: 100%;
+    /* max-width: 392px; */
     height: auto;
     background-color:var(--color-modal);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -766,6 +766,18 @@ transition: opacity var(--transition), visibility var(--transition);
 .privacy {
     color: var(--logo-color);
 }
+ .tel-mobil {
+            font-size: 24px;
+}
+.e-mail{
+    margin-right: 0;
+}
+.card-soc-list {
+    margin-top: 0;
+}
+.mobil-menu-container {
+    height: 100%;
+}
 
 /* ====================media-mobail================= */
 @media screen and (min-width: 428px) {
@@ -774,16 +786,29 @@ transition: opacity var(--transition), visibility var(--transition);
         margin-right: auto;
         margin-left: auto;
     }
+        .mobil-menu-container {
+            height: 796px;
+        }
+.hero-section {
+    max-width: 768px;
+}
         .modal {
             width: 392px;
             height: 586px;
         }
+    .tel-mobil{
+        font-size: 36px;
+    }
 }
 
 /* =====================media-tablet================== */
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
+    }
+    .header-page {
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .modal {
         width: 408px;
@@ -794,6 +819,9 @@ transition: opacity var(--transition), visibility var(--transition);
     }
     .mobile-menu-open {
         display: none;
+    }
+    .menu-link {
+        padding-bottom: 20px;
     }
     .menu-item {
         display: block;
@@ -836,7 +864,8 @@ transition: opacity var(--transition), visibility var(--transition);
         width: 264px;
     }
 .hero-section {
-    max-width: 768px;
+    /* max-width: 768px; */
+    max-width: 1158px;
     height: 436px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)), url(../images/hero-tab-1x.jpg);
@@ -884,13 +913,23 @@ screen and (min-resolution: 2dppx) {
 /* ======================media-desktop================= */
 @media screen and (min-width: 1158px) {
     .container {
-        width: 1128px;
+        width: 1158px;
+    }
+    .header-container {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .menu-link {
+        padding-bottom: 28px;
     }
     .logo {
         margin-right: 76px;
     }
     .contacts {
         margin-left: auto;
+    }
+    .tel {
+        margin-left: 40px;
     }
     .customers-section {
         padding-top: 120px;
@@ -899,6 +938,9 @@ screen and (min-resolution: 2dppx) {
     .menu-item {
         display: flex;
     }
+    .menu-link {
+        margin-bottom: 28px;
+    }
     .customer-item {
         width: calc((100% - 120px) / 6);
         height: 88px;
@@ -906,9 +948,18 @@ screen and (min-resolution: 2dppx) {
     .feature-title {
         font-size: 20px;
     }
+    .feature-page {
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
     .feature-page-item {
         width: calc((100% - 72px) / 4);
-        
+        height: 224px;
+    }
+    .feature-icon {
+        margin-bottom: 8px;
     }
     .team-page {
         gap: 24px;
@@ -989,13 +1040,13 @@ screen and (min-resolution: 2dppx) {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
+     
     }
     .contacts {
         margin-left: 0;
     }
     .tel-mobil {
     font-weight: 700;
-    font-size: 36px;
     line-height: 1.11;
     color: var(--logo-color);
     margin-bottom: 40px;
@@ -1003,12 +1054,17 @@ screen and (min-resolution: 2dppx) {
     .mobil {
     font-size: 20px;
     }
+    .e-mail{
+        margin-bottom: 48px;
+    }
     .card-soc-list {
-        justify-content: space-evenly;
+        justify-content: space-between;
+    }
+    .team-text {
+        margin-bottom: 8px;
     }
         .mobil-menu-container {
             display: flex;
-            height: 796px;
             position: relative;
             flex-direction: column;
             justify-content: space-between;
