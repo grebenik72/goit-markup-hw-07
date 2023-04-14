@@ -863,6 +863,9 @@ transition: opacity var(--transition), visibility var(--transition);
     .team-page-item {
         width: 264px;
     }
+    .team-text {
+        margin-bottom: 8px;
+    }
 .hero-section {
     /* max-width: 768px; */
     max-width: 1158px;
@@ -891,15 +894,21 @@ screen and (min-resolution: 2dppx) {
         padding: 72px 24px 24px 24px;
 }
    .footer-page {
+    max-width: 552px;
+    gap:0;
     flex-wrap: wrap;
     text-align: start;
-    justify-content: start;
-    padding-left: 92px;
+    justify-content: left;
 }
 
    .footer-input {
     width: 264px;
     
+}
+.footer-webstudio {
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 72px;
 }
     .footer-subscribe {
         display: flex;
@@ -1004,15 +1013,23 @@ screen and (min-resolution: 2dppx) {
     padding-bottom: 100px;
 }
 .footer-page {
+    max-width: 1158px;
     flex-wrap: nowrap;
-    padding-left: 0;
+    justify-content: space-between;
 
+}
+.footer-webstudio {
+    margin-bottom: 0;
+    margin-right: auto;
+}
+.footer-social-media {
+    margin-right: 80px;
 }
 .footer-input{
     width: 264px;
     padding-left: 16px;
 }
-.footer-subscribe{
+.footer-subscribe {
     display: block;
 }
 
