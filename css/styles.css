@@ -150,7 +150,6 @@ body {
 }
 .section {
     padding-top: 96px;
-    /* padding-bottom: 96px; */
 }
 .hero-section {
     max-width: 428px;
@@ -186,8 +185,8 @@ screen and (min-resolution: 2dppx) {
     text-align: center;
 }
 .section-projects {
-    padding-top: 96px;
-    padding-bottom: 120px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 /* =====customers-section====== */
 .customers-section {
@@ -249,10 +248,10 @@ background-color: var(--accent-color);
 /* ======btn-portfolio ===*/
 .filter-btn {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 72px;
-    gap: 24px;
+    margin-bottom: 48px;
+    gap: 24px 16px;
 }
 
 .filter-btn-activ {
@@ -395,10 +394,10 @@ background-color: var(--accent-color);
 .projects-card {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 24px;
+    gap: 48px;
 }
 .projects-card-item {
-    width: calc((100% - 48px) / 3);
+    width: 100%;
 }
 .card-link {
     display: block;
@@ -812,6 +811,10 @@ transition: opacity var(--transition), visibility var(--transition);
 .section {
     padding-bottom: 96px;
 }
+.section-projects {
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
     .modal {
         width: 408px;
     
@@ -922,11 +925,29 @@ screen and (min-resolution: 2dppx) {
 .social-media{
     width: 100%;
 }
+.filter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 64px;
+    gap: 24px;
+}
+.projects-card {
+    gap: 72px 24px;
+}
+
+.projects-card-item {
+    width: calc((100% - 24px) / 2);
+}
 }
 /* ======================media-desktop================= */
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
+    }
+    .section-projects {
+        padding-top: 96px;
+        padding-bottom: 120px;
     }
 
     .header-page {
@@ -1035,13 +1056,27 @@ screen and (min-resolution: 2dppx) {
 .footer-subscribe {
     display: block;
 }
+.filter-btn{
+    margin-bottom: 72px;
+}
+.projects-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
 
+.projects-card-item {
+    width: calc((100% - 48px) / 3);
+}
 }
 @media screen and (max-width: 1157px) {
 .feature-icon {
     display: none;
 }
 .section-rectangle {
+    display: none;
+}
+.overlay {
     display: none;
 }
 
